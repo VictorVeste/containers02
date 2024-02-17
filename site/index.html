@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Laboratorul nr.2" />
+    <meta name="keywords" content="laborator,html,elev" />
+    <meta name="author" content="Onea Alexei" />
+
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            width: 50%;
+
+
+        }
+
+        audio {
+            display: block;
+            margin: 0 auto;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sarcina nr. 1 ------------------------------------------------------------------------------------------------->
+    <h1 align="center">Sarcina Unu</h1>
+    <hr>
+    <pre style="display: flex; flex-direction: row; justify-content: center;">
+<img alt="Casa1" title="Imaginea unu" width="300px" height="300px" src="pic/pic1.jpg">
+<br>
+<img alt="Casa2" title="Imaginea doi" width="300px" height="300px" src="pic/pic2.jpg">
+</pre>
+    <br>
+    <div style="display:flex; justify-content:center;">
+        <img style="border:black solid 10px;" alt="Casa3" title="Imaginea trei" width="300px" height="300px"
+            src="pic/pic3.jpg">
+    </div>
+
+
+    <!-- Sarcina nr. 2 ------------------------------------------------------------------------------------------------->
+    <hr>
+    <h1 align="center">Sarcina Doi</h1>
+    <hr>
+    <table cellpadding="10" width="65%" align="center" border="1" style="border-collapse: collapse;">
+
+        <tr>
+            <th align="center" colspan="5">Date despre Copiii colaboratorilor</th>
+        </tr>
+        <tr>
+            <th>Nume, Prenume</th>
+            <th>Adresa fizica</th>
+            <th>Numar <br> copii <br> minori in <br> intretinere</th>
+            <th>Prenume copil <br> si anul de <br> nastere</th>
+            <th>Poza copil</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Ivanov Elena</td>
+            <td rowspan="2">Str. Codrilor 45, ap.56</td>
+            <td align="center" rowspan="2">2</td>
+            <td>Elena, 2006</td>
+            <td><a href="HTML\Elena.html"><img width="50%" height="35%" src="Pic copii/Elena.jpg"></td>
+
+        </tr>
+        <tr>
+
+            <td>Valeriu 2011</td>
+            <td><a href="HTML\Valeriu.html"><img width="50%" height="35%" src="Pic copii/Valeriu.jpg"></td>
+
+        </tr>
+
+        <tr>
+
+            <td rowspan="3">Mihailov Marta</td>
+            <td rowspan="3">Str. Puskin 10, ap.45</td>
+            <td align="center" rowspan="3">3</td>
+            <td>Ion, 2008</td>
+            <td><a href="HTML\Ion.html"><img width="50%" height="35%" src="Pic copii/Ion.jpg"></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Ecaterina,2010</td>
+            <td><a href="HTML\Ecaterina.html"><img width="50%" height="35%" src="Pic copii/Ecaterina.jpg"></a></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Valentin, 2011</td>
+            <td><a href="HTML\Valentin.html"><img width="50%" height="35%" src="Pic copii/Valentin.jpg"></td>
+
+        </tr>
+
+        <tr>
+
+            <td>Cliucnicov Magdalena</td>
+            <td>Str. Nucilor 34, ap.22</td>
+            <td aligne="center">1</td>
+            <td>Marius, 2012</td>
+            <td><a aligne="center" href="HTML\Marius.html"><img width="50%" height="35%" src="Pic copii/Marius.jpg">
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <th colspan="2">Total numar copii</th>
+            <td colspan="3">6</td>
+
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1 align="center">Sarcina Cinci</h1>
+    <hr>
+    <div class="container">
+        <form>
+            <fieldset style="float: left;">
+                <legend>Date personale</legend>
+                <table>
+                    <tr>
+                        <td>*Nume:</td>
+                        <td><input type="text" name="nume" required pattern="[a-zA-Z]+" /></td>
+                    </tr>
+                    <tr>
+                        <td>*Prenume:</td>
+                        <td><input type="text" name="prenume" required pattern="[a-zA-Z]+" /></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td>*Data nașterii:</td>
+                        <td><input type="date" name="data_nasterii" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Sexul:</td>
+                        <td>
+                            <input type="radio" name="sex" value="Masculin" /> M
+                            <input type="radio" name="sex" value="Feminin" /> F
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telefon:</td>
+                        <td><input type="tel" name="telefon" /></td>
+                    </tr>
+                    <tr>
+                        <td>Raionul:</td>
+                        <td>
+                            <select name="raion">
+                                <option value="Anenii Noi">Anenii Noi</option>
+                                <option value="Basarabeasca">Basarabeasca</option>
+                                <option value="Briceni">Briceni</option>
+                                <option value="Cahul">Cahul</option>
+                                <option value="Cantemir">Cantemir</option>
+                                <option value="Călărași">Călărași</option>
+                                <option value="Căușeni">Căușeni</option>
+                                <option value="Cimișlia">Cimișlia</option>
+                                <option value="Criuleni">Criuleni</option>
+                                <option value="Dondușeni">Dondușeni</option>
+                                <option value="Drochia">Drochia</option>
+                                <option value="Dubăsari">Dubăsari</option>
+                                <option value="Edineț">Edineț</option>
+                                <option value="Fălești">Fălești</option>
+                                <option value="Florești">Florești</option>
+                                <option value="Glodeni">Glodeni</option>
+                                <option value="Hîncești">Hîncești</option>
+                                <option value="Ialoveni">Ialoveni</option>
+                                <option value="Leova">Leova</option>
+                                <option value="Nisporeni">Nisporeni</option>
+                                <option value="Ocnița">Ocnița</option>
+                                <option value="Orhei">Orhei</option>
+                                <option value="Rezina">Rezina</option>
+                                <option value="Rîșcani">Rîșcani</option>
+                                <option value="Sîngerei">Sîngerei</option>
+                                <option value="Soroca">Soroca</option>
+                                <option value="Strășeni">Strășeni</option>
+                                <option value="Șoldănești">Șoldănești</option>
+                                <option value="Ștefan Vodă">Ștefan Vodă</option>
+                                <option value="Taraclia">Taraclia</option>
+                                <option value="Telenești">Telenești</option>
+                                <option value="Ungheni">Ungheni</option>
+                    </tr>
+                    <tr>
+                        <td>Studii:</td>
+                        <td>
+                            <imput name="studii">
+                                <input type="checkbox" value="Clegiu">Colegiu<br>
+                                <input type="checkbox" value="Licienta">Licienta<br>
+                                <input type="checkbox" value="Master">Master
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Suplimentar:</td>
+                        <td><textarea name="suplimentar" maxlength="1000"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Date despre produsul ales</legend>
+                <table>
+                    <tr>
+                        <td>*Denumirea produsului:</td>
+                        <td><input type="text" name="denumire_produs" required pattern="[a-zA-Z]+" /></td>
+                    </tr>
+                    <tr>
+                        <td>*Producătorul:</td>
+                        <td><input type="text" name="producator" required pattern="[a-zA-Z]+" /></td>
+                    </tr>
+                    <tr>
+                        <td>*Cantitatea de produse:</td>
+                        <td><input type="number" name="cantitate" required /></td>
+                    </tr>
+                    <tr>
+                        <td>*Culoarea:</td>
+                        <td><input type="color" id="culoare" name="culoare" value="#000000"></td>
+                    </tr>
+                    <tr>
+                        <td>*Mărimea:</td>
+                        <td><input type="text" name="marime" required /></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Date bancare</legend>
+                <table>
+                    <tr>
+                        <td>*Tipul cardului:</td>
+                        <td>
+                            <imput name="tip_card" required>
+                                <input type="radio" name="tip_card" value="Visa" /> Visa
+                                <input type="radio" name="tip_card" value="Mastercard" /> Mastercard
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Numărul cardului:</td>
+                        <label for="card-code">Cod de pe card (format de card):</label>
+                        <td><input type="text" id="card-code" name="card-code"
+                                pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required> </td>
+                    </tr>
+                    <tr>
+                        <td>*Expirația:</td>
+                        <td><input type="month" name="expiratie" required /></td>
+                    </tr>
+                </table>
+                <br>
+            </fieldset>
+            <br>
+            <input type="reset" value="Anulează">
+            <input type="submit" value="Trimite" />
+            <label>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤCimpul cu * trebuie sa fie completat</label>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <h1 align="center">Sarcina Sase</h1>
+    <hr>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d21322.6595580352!2d27.603106366961786!3d48.084526920014994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDA1JzMwLjYiTiAyN8KwMzYnMzcuOCJF!5e0!3m2!1sro!2s!4v1678203054619!5m2!1sro!2s"
+        width="600" height="450" style="border:0;
+ " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <br>
+    <hr>
+    <h1 align="center">Sarcina Sapte</h1>
+    <hr>
+    <video controls width="1280px" height="720px">
+        <source src="Audio-Video/Video1.mp4" type="video/mp4">
+        <source src="Audio-Video/Video2.mp4" type="video/mp4">
+        Your browser does not support the audio tag.
+    </video>
+    <audio controls>
+        <source src="Audio-Video/Audio1.mp3" type="audio/mp3">
+        <source src="Audio-Video/Audio2.m4a" type="audio/m4a">
+        Your browser does not support the audio tag.
+    </audio>
+</body>
