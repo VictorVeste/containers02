@@ -30,7 +30,7 @@ Am descărcat și instalat Docker Desktop.
    docker build -t containers02 .
    ```
 
-5. Am notat durata necesară pentru crearea imaginii Docker.
+5. Am notat durata necesară pentru crearea imaginii Docker, acest timp find 20.07 secunde.
 6. Am pornit containerul cu comanda:
 
    ```bash
