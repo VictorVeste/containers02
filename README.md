@@ -60,3 +60,4 @@ Am descărcat și instalat Docker Desktop.
   - Pasul 9: Am afișat conținutul directorului `/var/www/html/`.
 - **Concluzii:** Am experimentat cu succes procesul de containerizare folosind Docker, facilitând dezvoltarea și distribuirea aplicațiilor.
 - **Bibliografie:** [Documentația Docker](https://docs.docker.com/)
+- [Curs Containerizarea aplicațiilor](https://moodle.usm.md/course/view.php?id=6807)
