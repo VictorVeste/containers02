@@ -1,63 +1,34 @@
-# Lucrare de laborator: Containerizare cu Docker - Darea de Seamă
+# Raport de progres: Containerizare cu Docker - Rezumat
 
-## Scop
+## Obiectiv
 
-Această lucrare de laborator a avut ca obiectiv familiarizarea cu elementele de bază ale containerizării și pregătirea spațiului de lucru pentru următoarele activități practice.
+Această lucrare de laborator a avut ca scop familiarizarea cu conceptele de bază ale containerizării și pregătirea mediului de lucru pentru activități viitoare legate de Docker.
 
-## Sarcina
+## Activități
 
-Am urmat pașii indicati pentru instalarea Docker Desktop și am verificat funcționarea acestuia.
+### Pregătire
 
-## Pregătire
+Am instalat Docker Desktop pe calculatorul meu, urmând pașii de configurare și verificând funcționarea acestuia.
 
-Am descărcat și instalat Docker Desktop.
+### Implementare
 
-## Execuție
-
-1. Am creat repozitoriul `containers02` și l-am clonat pe computerul meu.
-2. În directorul `containers02` am creat fișierul `Dockerfile` cu conținutul:
-
-   ```Dockerfile
-   FROM debian:latest
-   COPY ./site/ /var/www/html/
-   CMD ["sh", "-c", "echo hello from $HOSTNAME"]
-   ```
-
-3. Am creat directorul `site` în același director de proiect și am adăugat un fișier `index.html` cu conținut arbitrar.
-4. Deschizând terminalul în directorul `containers02`, am executat comanda:
-
-   ```bash
-   docker build -t containers02 .
-   ```
-
-5. Am notat durata necesară pentru crearea imaginii Docker, acest timp find 20.07 secunde.
-6. Am pornit containerul cu comanda:
-
-   ```bash
-   docker run --name containers02 containers02
-   ```
-
-7. Am prezentat mesajul afișat în consolă.
-8. Am șters containerul și l-am repornit folosind comenzile:
-
-   ```bash
-   docker rm containers02
-   docker run -ti --name containers02 containers02 bash
-   ```
-
-9. În fereastra terminalului deschis, am navigat în directorul `/var/www/html/` și am afișat conținutul acestuia cu comanda `ls -l`.
-10. Am prezentat rezultatul afișat pe ecran.
-11. Am închis fereastra terminalului cu comanda `exit`.
+1. Am creat un nou repozitoriu denumit `containers02` și l-am clonat local pentru a începe lucrul.
+2. În directorul `containers02`, am definit fișierul `Dockerfile`, specificând un container bazat pe imaginea `debian:latest`, copiind conținutul directorului `site` în locația `/var/www/html/` și configurând comanda de pornire pentru a afișa un mesaj de salut.
+3. Am creat directorul `site` și am adăugat un fișier `index.html` cu conținut arbitrar.
+4. Am construit imaginea Docker folosind comanda `docker build -t containers02 .`, monitorizând timpul necesar pentru acest proces.
+5. Am pornit un container din imaginea creată cu comanda `docker run --name containers02 containers02` și am notat mesajul de salut afișat în terminal.
+6. Am șters containerul și l-am repornit în mod interactiv folosind comanda `docker rm containers02` și apoi `docker run -ti --name containers02 containers02 bash`, navigând în directorul `/var/www/html/` și afișând conținutul acestuia.
+7. Am încheiat sesiunea interactivă cu `exit`.
 
 ## Descrierea Proiectului
 
-- **Lucrare de laborator:** Containerizare cu Docker
-- **Scopul lucrării:** Familiarizarea cu elementele de bază ale containerizării și pregătirea spațiului de lucru pentru activități viitoare.
-- **Sarcina:** Instalarea Docker Desktop și verificarea funcționării acestuia.
-- **Descrierea Execuției Lucrării:**
-  - Pasul 4: Am construit imaginea Docker.
-  - Pasul 6: Am rulat containerul și am prezentat mesajul din consolă.
-  - Pasul 9: Am afișat conținutul directorului `/var/www/html/`.
-- **Concluzii:** Am experimentat cu succes procesul de containerizare folosind Docker, facilitând dezvoltarea și distribuirea aplicațiilor.
-- **Bibliografie:** [Documentația Docker](https://docs.docker.com/)
-- [Curs Containerizarea aplicațiilor](https://moodle.usm.md/course/view.php?id=6807)
+- **Scopul Lucrării:** Inițierea în containerizarea cu Docker și stabilirea mediului de lucru.
+- **Activități Realizate:**
+  - Instalarea și configurarea Docker Desktop.
+  - Crearea și configurarea imaginii Docker și a containerelor asociate.
+  - Monitorizarea și înțelegerea timpului necesar pentru construirea imaginii.
+  - Interacțiunea cu containerele Docker pentru verificarea și explorarea conținutului.
+- **Concluzii:** Am obținut o înțelegere inițială a Docker-ului și a procesului de containerizare, pregătindu-ne pentru activități viitoare mai complexe.
+- **Resurse Utile:**
+  - [Documentația Docker](https://docs.docker.com/)
+  - [Curs Containerizarea Aplicațiilor](https://moodle.usm.md/course/view.php?id=6807)
